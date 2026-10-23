@@ -14,13 +14,13 @@
 
     Separador
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 1.1  Variables en JavaScript
+      h2 1.1 Variables en JavaScript
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-8(data-aos="fade-right")
         .bg5.p-4.mb-4
           p.mb-0 Una variable en JavaScript es un identificador que permite acceder a un valor durante la ejecución del programa. Sin embargo, quedarse solo con la idea de que es únicamente "una caja donde se guardan cosas" lleva pronto a errores difíciles de rastrear: valores que cambian de forma inesperada, datos que se pierden y comportamientos distintos asociados al uso de palabras clave como #[b var], #[b let] y #[b const].
-        p.mb-0 Una forma clara de entender este concepto es pensar en una mudanza. Para trasladar objetos de un lugar a otro, no se llevan sueltos; se utilizan cajas. A cada caja se le coloca una etiqueta ("Libros", "Cables", "Documentos") y luego se guarda el contenido en su interior. En JavaScript, una variable funciona exactamente así: una caja con una etiqueta donde se guarda información para utilizarla más adelante en el programa.
+        p Una forma clara de entender este concepto es pensar en una mudanza. Para trasladar objetos de un lugar a otro, no se llevan sueltos; se utilizan cajas. A cada caja se le coloca una etiqueta ("Libros", "Cables", "Documentos") y luego se guarda el contenido en su interior. En JavaScript, una variable puede entenderse como una caja con una etiqueta que permite acceder a un valor y utilizarlo más adelante en el programa. Esta analogía facilita la comprensión del concepto, aunque el funcionamiento real de las variables depende de las reglas del lenguaje. 
         p En el pasado, JavaScript utilizaba la palabra #[strong var] para crear estas cajas. Sin embargo, el lenguaje ha evolucionado y hoy se emplean dos términos más precisos: #[strong let] y #[strong const].
       .col-lg-4.d-none.d-lg-block(data-aos="fade-left")
         img(src='@/assets/curso/temas/t1/2.png', alt='')
@@ -210,7 +210,8 @@
       .col-lg-10
         .tarjeta.tarjeta--gris.p-4.px-lg-5
           p Javascript
-          p.mb-0 #[span.ct1 const] grupoA = { #[span.ct4 nombre]: #[span.ct3 "Grupo A"], #[span.ct4 aprendices]: [] }; #[span.ct1 const] copia = grupoA;
+          p.mb-0 #[span.ct1 const] grupoA = { #[span.ct4 nombre]: #[span.ct3 "Grupo A"], #[span.ct4 aprendices]: [] }; 
+          p.mb-0 #[span.ct1 const] copia = grupoA;
           p.mb-0.ct5 // Se intenta agregar un aprendiz a la "copia"
           p.mb-0 copia.aprendices.#[span.ct2 push](#[span.ct3 "Carlos"]);
     
@@ -405,7 +406,7 @@
               p.mb-1.ps-4 #[span.ct2 mostrarMensaje](#[span.ct3 "Debe revisar y completar todo el material antes de habilitar la evaluación."]);
               p.mb-1 } #[span.ct1 else] { 
               p.mb-1.ps-4 #[span.ct2 habilitarEvaluacion](estadoDelAprendiz.id); 
-              p.mb-1.ps-4 #[span.ct2 mostrarMensaje](#[span.ct3 "¡La evaluación está habilitada!"]); } };
+              p.mb-1.ps-4 #[span.ct2 mostrarMensaje](#[span.ct3 "¡La evaluación está habilitada!"]);
               p.mb-1.ps-2 } 
               p.mb-0 };
 
@@ -587,15 +588,23 @@
         p Las variables guardan información y representan cosas o entidades. Sus nombres siempre deben ser sustantivos descriptivos.
         .tarjeta.tarjeta--gris.p-4.px-lg-5
           p.fw-bold Ejemplo
-          p.mb-1 ❌ Incorrecto       #[span.ct4 let n = "Carlos"; / const list = [ &#93;;]
-          p.mb-0 ✅ Correcto         #[span.ct4 let nombreAprendiz = "Carlos"; / const listaCursos = [ &#93;;]
+          p.mb-0 ❌ Incorrecto       
+          p.mb-0 #[span.ct4 let n = "Carlos"; ]
+          p #[span.ct4 const list = [ &#93;;]
+          p.mb-0 ✅ Correcto         
+          p.mb-0 #[span.ct4 let nombreAprendiz = "Carlos"; ]
+          p #[span.ct4 const listaCursos = [ &#93;;]
       .tarjeta.color-acento-botones.p-4(titulo="Funciones (los verbos)")
         h4 Funciones (los verbos)
         p Las funciones realizan un trabajo y representan acciones. Sus nombres siempre deben comenzar con un verbo en infinitivo que indique exactamente qué hacen.
         .tarjeta.tarjeta--gris.p-4.px-lg-5
           p.fw-bold Ejemplo
-          p.mb-1 ❌ Incorrecto       #[span.ct4 const datos = () => {} / function usuario() {}]
-          p.mb-0 ✅ Correcto         #[span.ct4 const obtenerDatos = () => {} / function validarUsuario() {}]
+          p.mb-0 ❌ Incorrecto       
+          p.mb-0 #[span.ct4 const datos = () => {} ]
+          p #[span.ct4 function usuario() {}]
+          p.mb-0 ✅ Correcto         
+          p.mb-0 #[span.ct4 const obtenerDatos = () => {} ] 
+          p #[span.ct4 function validarUsuario() {}]
 
     .row.align-items-center.titulo-icono.mb-4(data-aos='fade-right')
       .col-auto.titulo-icono-img
@@ -611,7 +620,7 @@
           .col-lg-2.col-md-2.col-3
             img(src='@/assets/curso/temas/t1/24.svg', alt='')
           .col-lg-10.col-md-10.col-9
-            p.mb-0 Una vez que las funciones tienen el nombre correcto, se debe evaluar su contenido. Aquí entra en juego uno de los principios más importantes de la ingeniería de #[em software]: el Single Responsibility Principle (principio de responsabilidad única). Esta regla establece que una función debe hacer una sola cosa, y debe hacerla de manera excelente.
+            p.mb-0 Una vez que las funciones tienen el nombre correcto, se debe evaluar su contenido. Aquí entra en juego uno de los principios más importantes de la ingeniería de #[em software]: el #[em Single Responsibility Principle] (principio de responsabilidad única). Esta regla establece que una función debe hacer una sola cosa, y debe hacerla de manera excelente.
         p Un restaurante ilustra este principio con claridad: existe el rol del chef (cocinar) y el rol del mesero (atender las mesas). Si el chef tiene que soltar la espátula en medio de un pedido para ir a cobrarle a un cliente, el servicio colapsa. Cada rol debe tener una única responsabilidad.
 
     p En el #[em software] educativo ocurre lo mismo. Si se diseña una función llamada #[b validarLogin] para verificar la contraseña de un usuario, su único trabajo es decir "aprobado" o "rechazado". Si al revisar el código interno se descubre que esa misma función también envía correos electrónicos de bienvenida y guarda estadísticas en la base de datos, es el momento exacto para refactorizar (reestructurar el código sin cambiar su comportamiento externo).

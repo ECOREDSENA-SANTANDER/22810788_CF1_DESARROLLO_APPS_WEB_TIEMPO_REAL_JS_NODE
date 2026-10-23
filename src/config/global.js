@@ -2,7 +2,7 @@ export default {
   global: {
     Name: 'Fundamentos de JavaScript y Node.js para desarrollo web',
     Description:
-      'JavaScript es el lenguaje que impulsa la web moderna y Node.js su extensión al servidor, juntos constituyen el ecosistema tecnológico de referencia para construir aplicaciones web en tiempo real. Este componente aborda sus fundamentos, la programación orientada a objetos (POO) y las características de Node.js, orientando al aprendiz en la selección argumentada de herramientas según los requisitos técnicos del <em>software</em> a desarrollar.',
+      'JavaScript es el lenguaje que impulsa la web moderna y Node.js es un entorno de ejecución que permite utilizar JavaScript en el servidor. Juntos constituyen un ecosistema tecnológico de referencia para construir aplicaciones web en tiempo real. Este componente aborda sus fundamentos, la programación orientada a objetos (POO) y las características de Node.js, orientando al aprendiz en la selección argumentada de herramientas según los requisitos técnicos del <em>software</em> a desarrollar. ',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -102,7 +102,7 @@ export default {
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Node.js para tiempo real',
+        titulo: 'Node.js para aplicaciones en tiempo real',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -117,7 +117,7 @@ export default {
           },
           {
             numero: '3.3',
-            titulo: 'Conceptos de TCP y <em>sockets</em>',
+            titulo: 'Conceptos de TCP, <em>sockets</em> y <em>WebSocket</em>',
             hash: 't_3_3',
           },
           {
@@ -279,18 +279,19 @@ export default {
   referencias: [
     {
       referencia:
-        'Armstrong, J. (2019). Programming Erlang: Software for a concurrent world (2.ª ed.). Pragmatic Bookshelf. ',
+        'Armstrong, J. (2013). Programming Erlang: Software for a concurrent world (2.ª ed.). Pragmatic Bookshelf. ',
     },
     {
       referencia:
-        "Crockford, D. (2008). JavaScript: The good parts. O'Reilly Media.",
+        "Crockford, D. (2008). JavaScript: The good parts. O'Reilly Media. ",
     },
     {
       referencia:
-        'Haverbeke, M. (2020). Eloquent JavaScript: A modern introduction to programming (3.ª ed.). No Starch Press.',
+        'Haverbeke, M. (2018). Eloquent JavaScript: A modern introduction to programming (3.ª ed.). No Starch Press. ',
     },
     {
-      referencia: 'Mozilla. (s. f.). Arrow function expressions. MDN Web Docs.',
+      referencia:
+        'Mozilla. (s. f.). Arrow function expressions. MDN Web Docs. ',
     },
     {
       referencia:
@@ -298,14 +299,15 @@ export default {
     },
     {
       referencia:
-        "Simpson, K. (2015). You don't know JS: Scope & closures. O'Reilly Media. ",
+        "Simpson, K. (2014a). You don't know JS: Scope & closures. O'Reilly Media. ",
     },
     {
       referencia:
-        "Simpson, K. (2015). You don't know JS: This & object prototypes. O'Reilly Media. ",
+        "Simpson, K. (2014b). You don't know JS: This & object prototypes. O'Reilly Media. ",
     },
     {
-      referencia: 'Socket.IO. (s. f.). Redis adapter. Socket.IO Documentation.',
+      referencia:
+        'Socket.IO. (s. f.). Redis adapter. Socket.IO Documentation. ',
     },
   ],
   creditos: [
@@ -314,7 +316,8 @@ export default {
       autores: [
         {
           nombre: 'Claudia Johanna Gómez Pérez',
-          cargo: 'Responsable del ecosistema',
+          cargo:
+            'Profesional G06. Responsable Ecosistema Virtual de Recursos Educativos Digitales',
           centro: 'Dirección General',
         },
         {
@@ -353,7 +356,7 @@ export default {
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: '',
+          nombre: 'María Alejandra Vera Briceño ',
           cargo: 'Animadora y productora audiovisual',
           centro: 'Centro Agroturístico - Regional Santander',
         },
@@ -368,7 +371,7 @@ export default {
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
-          nombre: '',
+          nombre: 'Sandra Liliana Cristancho Cruz ',
           cargo: 'Evaluadora de contenidos inclusivos y accesibles',
           centro: 'Centro Agroturístico - Regional Santander',
         },

@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 3
-      h1 Node.js para tiempo real
+      h1 Node.js para aplicaciones en tiempo real 
 
     .row.justify-content-center.align-items-center
       .col-lg-8(data-aos="fade-right")
@@ -36,7 +36,7 @@
             img(src='@/assets/curso/temas/t3/3.svg', alt='')
           .col-lg-10.col-md-10.col-9
             p.mb-0 Para entender cómo Node.js logra esta hazaña, es necesario compararlo con la forma en que operaban los servidores web tradicionales (como los construidos con PHP o las versiones clásicas de Java).
-        p En el modelo tradicional, cada vez que un usuario se conecta a la página web, el servidor contrata a un nuevo "trabajador" (conocido técnicamente como un hilo o #[em thread]) para atender exclusivamente a esa persona. Si el usuario pide una lista de calificaciones, el trabajador va a la base de datos (una operación de entrada/salida o I/O) y se queda allí, de brazos cruzados y bloqueado, esperando pacientemente a que la base de datos responda. Si 10.000 estudiantes entran al mismo tiempo, el servidor debe contratar 10.000 trabajadores, lo que agota rápidamente la memoria RAM y hace que el sistema se caiga.
+        p En el modelo tradicional, cada vez que un usuario se conecta a la página web, el servidor contrata a un nuevo "trabajador" (conocido técnicamente como un hilo o #[em thread]) para atender exclusivamente a esa persona. Si el usuario pide una lista de calificaciones, el trabajador va a la base de datos (una operación de entrada/salida o I/O) y se queda allí, de brazos cruzados y bloqueado, esperando pacientemente a que la base de datos responda. Si 10.000 aprendices entran al mismo tiempo, el servidor debe contratar 10.000 trabajadores, lo que agota rápidamente la memoria RAM y hace que el sistema se caiga.
     
     p Node.js cambia las reglas del juego utilizando un modelo de I/O no bloqueante. En lugar de tener miles de trabajadores perezosos, Node.js tiene un solo "hilo principal" (un único trabajador) que nunca, en ninguna circunstancia, se detiene a esperar.
 
@@ -156,19 +156,19 @@
         p.mb-0 Si una biblioteca tiene tres millones de descargas a la semana, está siendo utilizada y probada constantemente por miles de empresas. Si tiene diez descargas, es un riesgo no probado. ¿Cuántos equipos confían en esta herramienta?
       .tarjeta.bg3.p-4
         .row.justify-content-center.mb-3
-          .col-8.col-lg-8.col-md-5
+          .col-8.col-lg-9.col-md-5
             img(src='@/assets/curso/temas/t3/tarj1-2.svg' alt='')
-        h4.text-center Estabilidad (#[em issues] en GitHub)
+        h4.text-center.px-lg-4 Estabilidad (#[em issues] en GitHub)
         p.mb-0 Al revisar el repositorio público del código, ¿cuántos problemas han reportado otros usuarios? Y más importante: ¿los creadores los están resolviendo activamente? Un repositorio con cientos de #[em issues] sin respuesta es una señal de alerta.
       .tarjeta.bg3.p-4
         .row.justify-content-center.mb-3
-          .col-8.col-lg-7.col-md-4
-            img(src='@/assets/curso/temas/t3/tarj1-3.svg' alt='')
+          .col-8.col-lg-8.col-md-4
+            img.px-lg-1(src='@/assets/curso/temas/t3/tarj1-3.svg' alt='')
         h4.text-center Mantenimiento (fecha del último #[em commit]) 
         p.mb-0 La tecnología web evoluciona a diario. Si la última actualización del paquete fue hace dos años, se considera una biblioteca abandonada (#[em abandonware]) y representa un riesgo crítico de seguridad cibernética.
       .tarjeta.bg3.p-4
         .row.justify-content-center.mb-3
-          .col-8.col-lg-7.col-md-4
+          .col-8.col-lg-8.col-md-4
             img(src='@/assets/curso/temas/t3/tarj1-4.svg' alt='')
         h4.text-center Licenciamiento legal
         p.mb-0 Es un error creer que todo el código abierto es de uso libre sin restricciones. Se debe distinguir entre licencias permisivas (como la licencia MIT) y licencias estrictas (como GPL, que obligan a abrir el código fuente derivado). Ignorar esto expone a futuros empleadores a demandas legales.
@@ -198,7 +198,7 @@
 
     Separador
     #t_3_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 3.3  Conceptos de TCP y #[em sockets]
+      h2 3.3 Conceptos de TCP, #[em sockets] y #[em WebSocket]
 
     .row.justify-content-center.mb-5
       .col-lg-5.col-md-9.mb-3.mb-lg-0(data-aos="fade-right")      
@@ -378,7 +378,7 @@
               .tarjeta.tarjeta--gris.p-4.px-lg-5
                 p bash
                 p.mb-0.ct5 # Comando de instalación en sistemas Unix/Linux
-                p.mb-0 #[span.ct2 curl] -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | #[span.ct2 bash]
+                p.mb-0 #[span.ct2 curl] -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.8/install.sh | #[span.ct2 bash]
           .row.align-items-center.justify-content-center
             .col-11
               h4 Instalar la versión LTS de Node.js
@@ -395,9 +395,9 @@
               p Una vez completada la instalación, se debe verificar que el entorno quedó correctamente configurado. Estos comandos confirman que tanto Node.js como npm están disponibles y operativos:
               .tarjeta.tarjeta--gris.p-4.px-lg-5.mb-4
                 p bash
-                p.mb-0.ct5 # Verificar versión de Node.js instalada 
+                p.mb-0.ct5 # Verificar la versión de Node.js instalada 
                 p #[span.ct2 node] --version
-                p.mb-0.ct5 # Verificar versión de NPM instalada 
+                p.mb-0.ct5 # Verificar la versión de npm instalada 
                 p.mb-0 #[span.ct2 npm] --version
               p Si ambos comandos retornan un número de versión, el entorno está listo para el desarrollo.
 

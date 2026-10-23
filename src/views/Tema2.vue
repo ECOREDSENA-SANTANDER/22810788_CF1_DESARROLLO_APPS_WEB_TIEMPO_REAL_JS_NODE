@@ -101,8 +101,9 @@
         .col-11
           .tarjeta.tarjeta--gris.p-4.px-lg-5.mb-4
             p Javascript
-            p.mb-0 #[span.ct5 // Se ve como una clase tradicional, pero es un prototipo oculto]
+            p.mb-0 #[span.ct5 // La clase define una estructura para crear objetos y compartir métodos mediante su prototipo. ]
               p.mb-0 #[span.ct1 class] #[span.ct4 Usuario] {
+              p.mb-0 }
           p La palabra #[b class] es la envoltura visual. Internamente JavaScript la convierte en una función constructora con su cadena de prototipos.
       .row.justify-content-center(titulo="El constructor y las propiedades")
         .col-11
@@ -285,7 +286,7 @@
             p Una vez que los objetos están seguros, el siguiente paso es reutilizar código. Históricamente el enfoque principal ha sido la herencia.
             p La herencia (implementada en JavaScript moderno con la palabra clave #[b extends]) permite crear relaciones del tipo "es un/a". Por ejemplo, tiene sentido lógico decir que "un instructor es un usuario". Por lo tanto, la clase #[b Instructor] hereda todas las propiedades y métodos de la clase padre Usuario, añadiendo únicamente sus características específicas.
           .col-11
-            p Sin embargo, a medida que las aplicaciones crecen, las jerarquías de herencia profundas crean un código rígido y frágil. En la ingeniería de #[em software] existe un famoso dilema conocido como el problema del gorila y la banana, formulado por Armstrong (2019): "querías una banana, pero te llevaste un gorila sosteniendo la banana y toda la selva con él".
+            p Sin embargo, a medida que las aplicaciones crecen, las jerarquías de herencia profundas crean un código rígido y frágil. En la ingeniería de #[em software] existe un famoso dilema conocido como el problema del gorila y la banana, formulado por Armstrong: "querías una banana, pero te llevaste un gorila sosteniendo la banana y toda la selva con él".                                                                                                                                                
             p Esto ocurre cuando se crea una nueva clase y se le hace heredar de una clase gigante, por ejemplo, #[b InstructorTecnico] hereda de #[b Profesor], que hereda de #[b Empleado], que hereda de #[b Usuario], solo porque se necesitaba reutilizar un pequeño método como #[b saludar()]. Como resultado, el nuevo objeto carga en memoria con funciones y configuraciones que jamás va a utilizar, afectando el rendimiento de la aplicación en tiempo real.
       .py-4.py-md-5.bg4(titulo="La alternativa del arquitecto: la composición" :icono="require('@/assets/curso/temas/t2/tabs1-ico3.svg')")
         .row.justify-content-center
